@@ -298,6 +298,13 @@ list-style-type: disc;
     letter-spacing: 4px;
   }
 
+  @media (max-width: 768px) {
+    .text-main{
+      font-size : 2rem;
+    }
+
+  }
+
 /*==================================================
                       ABOUT
 ====================================================*/
@@ -322,6 +329,14 @@ list-style-type: disc;
     text-transform: none;
     color:#555;
   }
+
+  @media (max-width: 768px) {
+    #experience h2{
+      font-size : 1.5rem;
+    }
+  }
+
+
 
 /*====================================================
                    PORTFOLIO
