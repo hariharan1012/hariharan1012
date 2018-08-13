@@ -692,6 +692,7 @@ box-shadow : 2px 5px 4px 2px #848080;
   width: 250px;
   min-height : 100px;
   height: auto;
+  max-width: 100%;
 }
 /* End carousel */
 
@@ -707,6 +708,12 @@ box-shadow : 2px 5px 4px 2px #848080;
 
 .item h2,h4{
   text-transform: uppercase;
+  font-size: 2rem;
+}
+
+
+.item p {
+text-align: justify;
 }
 
 
@@ -722,12 +729,30 @@ box-shadow : 2px 5px 4px 2px #848080;
       margin-bottom: 0;
       padding: 0 40px 30px 40px;
     }
+    .item h2{
+      font-size : 20px;
+    }
+    .item p {
+
+    }
 
 }
 
 /* Small devices (tablets, up to 768px) */
 @media (max-width: 768px) {
+  #quote-carousel .carousel-control.left
+  {
+    left: -35px;
+    top: 30%;
 
+  }
+  /* Next button  */
+  #quote-carousel .carousel-control.right
+  {
+    right: -35px !important;
+    top: 30%;
+
+  }
     /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
 
     #quote-carousel .carousel-indicators {
