@@ -12,6 +12,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -40,6 +41,8 @@
         text-transform : uppercase;
         letter-spacing: 5px;
         color : white;
+        margin: 1%;
+        float:left;
         transition: all 0.1s ease-in-out 0s;
         -moz-transition: all 0.1s ease-in-out 0s;
         -webkit-transition: all 0.1s ease-in-out 0s;
@@ -58,7 +61,9 @@
       .project-navbar i{
         position: absolute;
       }
-
+      .navbar-toggler{
+            font-size: 2.25rem;
+      }
       .banner-head{
         background-image: url(../../img/projects/interaction_bg2.png);
         background-repeat: no-repeat;
@@ -126,23 +131,37 @@ position:absolute; left:30px; top:12px;
 
   <body id="page-top" style="background-color:white">
 
-    <nav class="project-navbar navbar-dark text-center">
+    <nav class="project-navbar navbar-expand-lg navbar-dark text-center">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2">
       <a href="../../index.html#skills"><i onclick="javascript:location.href='../index.html'" class="fa fa-home fa-2x" style="color:white" aria-hidden="true"></i></a>
-    <!-- Links -->
-    <div class="row">
-      <div class="col-md-3">
-        <a href="interaction1.html">Project 1</a>
       </div>
-      <div class="col-md-3">
-        <a  class="active" href="#">Project 2</a>
+      <div class="col-md-10">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="container-fluid text-center">
+            <div class="row">
+            <div class="col-md-3 col-sm-12">
+              <a href="interaction1.html" >Project 1</a>
+            </div>
+            <div class="col-md-3 col-sm-12">
+              <a href="#" class="active">Project 2</a>
+            </div>
+            <div class="col-md-3 col-sm-12">
+              <a href="interaction3.html">Project 3</a>
+            </div>
+            <div class="col-md-3 col-sm-12">
+              <a href="interaction4.html">Project 4</a>
+            </div>
+          </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3">
-        <a href="interaction3.html">Project 3</a>
-      </div>
-      <div class="col-md-3">
-        <a href="interaction4.html">Project 4</a>
-      </div>
-  </div>
+    </div>
     </nav>
     <div class="container-fluid banner-head">
     <div class="banner-container">
@@ -217,8 +236,8 @@ position:absolute; left:30px; top:12px;
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
   <!-- Plugin JavaScript -->
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="../js/stylish-portfolio.min.js"></script>
+  <script src="../../js/stylish-portfolio.min.js"></script>
   </body>
